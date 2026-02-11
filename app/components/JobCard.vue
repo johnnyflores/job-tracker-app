@@ -9,11 +9,20 @@
       </span>
       <span class="text-sm text-gray-500">{{ date }}</span>
     </div>
-
-    <button @click="$emit('edit')" class="mt-3 text-sm text-blue-600">
-      Edit
-    </button>
-    <button @click="$emit('delete')" class="text-red-600">Delete</button>
+    <div class="flex space-x-2">
+      <button
+        @click="$emit('edit')"
+        class="cursor-pointer mt-3 text-sm text-blue-600 px-4 py-2 rounded border border-blue-600 hover:bg-blue-600 hover:text-white transition"
+      >
+        Edit
+      </button>
+      <button
+        @click="$emit('delete')"
+        class="cursor-pointer mt-3 text-sm text-red-600 px-4 py-2 rounded border border-red-600 hover:bg-red-600 hover:text-white transition"
+      >
+        Delete
+      </button>
+    </div>
   </div>
 </template>
 

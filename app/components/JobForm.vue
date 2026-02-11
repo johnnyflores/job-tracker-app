@@ -42,7 +42,10 @@
       />
 
       <div class="flex gap-2">
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+        <button
+          type="submit"
+          class="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
           {{ isEdit ? "Update" : "Add" }}
         </button>
 
@@ -50,7 +53,7 @@
           v-if="isEdit"
           type="button"
           @click="resetForm"
-          class="border px-4 py-2 rounded bg-white border-gray-300"
+          class="cursor-pointer border px-4 py-2 rounded bg-white border-gray-300 hover:bg-gray-100 transition"
         >
           Cancel
         </button>
